@@ -3,13 +3,13 @@
 {{ end -}}
 
 <header class="main-header">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg"> 
     <div class="container">
 
       <!-- Brand -->
       <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
         {{ if isset .Site.Params "mainmenulogo" }}
-        <img src="{{ .Site.Params.mainMenuLogo | relURL }}" alt="logo" width="30" height="24"
+        <img src="{{ `images/title.svg` | relURL }}" alt="logo" width="30" height="24"
           class="d-inline-block align-text-top">
         {{ end }}
         {{ .Site.Title }}
